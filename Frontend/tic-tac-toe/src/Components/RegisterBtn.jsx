@@ -1,7 +1,8 @@
-const RegisterBtn = () =>{
+const RegisterBtn = (props) =>{
+    const {handleClick}=props;
     return(
         <>
-        <button>Register</button>
+        <button onClick={handleClick}>Register</button>
         </>
     )
 }

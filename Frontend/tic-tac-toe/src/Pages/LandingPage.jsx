@@ -8,7 +8,7 @@ const LandingPage = () => {
         navigate("/login")
     }
     const goToRegister = () =>{
-        navigate("register")
+        navigate("/register")
     }
 return (
     <>

@@ -1,11 +1,17 @@
 import ActionBar from "../Components/ActionBar"
 import RegisterBtn from "../Components/RegisterBtn"
+import { useNavigate } from "react-router-dom"
+
 
 const RegisterSuccess = () => {
+    const navigate = useNavigate();
 
+    const goBack = () => {
+        navigate("/")
+    }
     return (
         <>
-        <ActionBar/>
+        <ActionBar goBack={goBack}/>
         <p>Create Account</p>
         <h2>Let’s get to know you better!</h2>
         <p>Your Name</p>
@@ -16,7 +22,7 @@ const RegisterSuccess = () => {
         <input type="text" name="" id="email" />
         <p>Password</p>
         <input type="text" name="" id="password" />
-        <RegisterBtn disabled={disabled}/>
+        <RegisterBtn />
         </>
     )
 }

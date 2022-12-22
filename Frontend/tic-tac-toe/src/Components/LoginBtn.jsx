@@ -1,7 +1,8 @@
-const LoginBtn = () =>{
+const LoginBtn = (props) =>{
+    const {handleClick}=props;
     return(
         <>
-        <button>login</button>
+        <button onClick={handleClick}>login</button>
         </>
     )
 }
