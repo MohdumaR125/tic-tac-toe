@@ -1,5 +1,4 @@
 import Styles from "./Styles.module.css"
-
 const LoginBtn = (props) =>{
     const {handleClick}=props;
     return(

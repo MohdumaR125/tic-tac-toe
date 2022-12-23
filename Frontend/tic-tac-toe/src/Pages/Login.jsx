@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import ActionBar from "../Components/ActionBar"
+import LoginBtn from "../Components/LoginBtn";
+import Styles from "../Components/Styles.module.css"
+
 
 
 const Login = () => {
@@ -25,14 +28,15 @@ const Login = () => {
     return (
         <>
         <ActionBar goBack={goBack}/>
-        <p>Login</p>
-        <h2>Please enter your details</h2>
+       <div className={Styles.login}>
+       <p>Login</p>
+        <h3>Please enter your details</h3>
         <p>Username</p>
         <input type="text" name="username" value={username} onChange={handleInput} id="username" />
-        
         <p>Password</p>
         <input type="text" name="password" value={password} onChange={handleInput} id="password" />
-        <button onClick={handleLogin}>Login</button>        
+       </div>
+        <LoginBtn handleClick={handleLogin}/>   
         </>
     )
 }
