@@ -13,6 +13,10 @@ const Home = () => {
     const getData = () => {
 
     }
+
+    const playOpponent = (e) => {
+        
+    }
     return(
         <>
         <div>
@@ -24,7 +28,7 @@ const Home = () => {
                         <h3>Game with {el.oponent}</h3>
                         <p>{el.move_comment}</p>
                         <p>{el.time}</p>
-                        <PlayBtn handleClick={PlayBtn} id={el.id}/>
+                        <PlayBtn handleClick={playOpponent} id={el.id}/>
                     </div>       
                 })
             }

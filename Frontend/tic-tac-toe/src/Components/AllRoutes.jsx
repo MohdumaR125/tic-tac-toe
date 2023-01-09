@@ -4,6 +4,7 @@ import Login from "../Pages/Login"
 import LoginError from "../Pages/LoginError"
 import Register from "../Pages/Register"
 import RegisterSuccess from "../Pages/RegisterSuccess"
+import Board from "./Board"
 
 const AllRoutes = () => {
     return(
@@ -14,6 +15,7 @@ const AllRoutes = () => {
                 <Route path="/registersuccess" element={<RegisterSuccess/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/loginerror" element={<LoginError/>}></Route>
+                <Route path="/board" element={<Board/>}></Route>
             </Routes>
         </div>
     )
